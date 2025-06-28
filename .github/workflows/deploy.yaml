@@ -50,6 +50,6 @@ jobs:
           cd /opt/e-stunting-app
           npm install
           npm run build
-          pm2 delete e-stunting-app || true
-          pm2 start npm --name "e-stunting-app" -- run start
-          pm2 save
+          /usr/local/bin/pm2 delete e-stunting-app || true
+          /usr/local/bin/pm2 start npm --name "e-stunting-app" -- run start
+          /usr/local/bin/pm2 save
